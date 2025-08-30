@@ -179,6 +179,12 @@ body{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
+.Shoe2:active::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
 .Shoe2:hover{
     border-top-right-radius: 0;
     border-bottom-right-radius:0 ;
@@ -632,4 +638,5 @@ body{
         margin-right: 3%;
     }
     
+
 }
