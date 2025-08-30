@@ -1,0 +1,135 @@
+h2{
+    text-align: center;
+    color:rgb(255, 251, 0)
+}
+.Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+}
+.Header{grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#Arrow{
+    font-size: 0.5rem;
+    margin-left: 2% ;
+}
+.TopNav > ul > li{
+    display: inline-block;
+}
+.DropMenu > a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.TopNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.DropMenu{
+    position: relative;
+}
+.Content{
+    display:none;
+    position: absolute;
+    transform: translateX(-20%);
+    background-color: white;
+    color: black;
+    li{
+        list-style: none;
+        text-align: left;
+    }
+}
+.Content li{
+    position: relative;
+}
+.Content ul{
+    padding: 0;
+    margin: 0;
+}
+.DropMenu:hover .Content{
+    display: block;
+}
+.Content li:hover{
+    background-color: hsla(0, 1%, 52%, 0.8);
+   
+}
+.Content li a{
+    text-decoration: none;
+    color: black;
+}
+.Content li a:hover{
+    color:rgb(255, 251, 0);
+}
+.Logo{
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-image: url(alvalogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+p{
+    text-align: center;
+    font-size: 2rem;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* ...existing code... */
+.Gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+img{
+    width: 20%;
+    aspect-ratio: 1/1;
+}
+@media screen and (max-width: 700px) {
+    p{
+        font-size: 1rem;
+    }
+    .TopNav {
+        font-size: 1rem;
+        margin-right: 3%;
+    }
+}

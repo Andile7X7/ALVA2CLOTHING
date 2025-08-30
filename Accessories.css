@@ -1,0 +1,658 @@
+h2{
+    text-align: center;
+    color:rgb(255, 251, 0)
+}
+.Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+    
+}
+.Header{grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#Arrow{
+    font-size: 0.5rem;
+    margin-left: 2% ;
+}
+.TopNav > ul > li{
+    display: inline-block;
+}
+.DropMenu > a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.TopNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.DropMenu{
+    position: relative;
+}
+.Content{
+    display:none;
+    position: absolute;
+    transform: translateX(-20%);
+    background-color: white;
+    color: black;
+    li{
+        list-style: none;
+        text-align: left;
+    }
+}
+.Content li{
+    position: relative;
+}
+.Content ul{
+    padding: 0;
+    margin: 0;
+}
+.DropMenu:hover .Content{
+    display: block;
+}
+.Content li:hover{
+    background-color: hsla(0, 1%, 52%, 0.8);
+   
+}
+.Content li a{
+    text-decoration: none;
+    color: black;
+}
+.Content li a:hover{
+    color:rgb(255, 251, 0);
+}
+.Logo{
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-image: url(alvalogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+
+/* ---*/
+.A1{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A1-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A1::before{
+     content: "Black & White Fittted Cap\A Available sizes:\A  L M S\A\APrice : R550";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A1:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+/* ---*/
+.A2{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A3-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A2::before{
+     content: "Blue & Pink Fitted Cap\A Available sizes:\A  L M S\A\APrice : R550";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A2:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+/* ---*/
+.A3{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A4Louie-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A3::before{
+     content: "Louis Vuitton Pearl Beanie\A Available sizes:\A  SOLD OUT\A\APrice : R7,550";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A3:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+/* ---*/
+.A4{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A5-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A4::before{
+     content: "Green Stone Island Balaclava\A Available sizes:\A SOLD OUT\A\APrice : R4,675";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A4:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+/* ---*/
+.A5{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A6-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A5::before{
+     content: "Black Beanie\A Available sizes:\A   M \A\APrice : R1,500";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A5:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+/* ---*/
+.A6{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A7-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A6::before{
+     content: "X Planet belt\A Available sizes:\A  L M S\A\APrice : R250";
+    position: absolute; 
+    bottom: 0;
+    width: 110%;
+    left:99% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A6:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+
+}
+.A6:Hover{
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+/*---*/
+.A7{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A8-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A7::before{
+     content: "Eagle Blet\A Available sizes:\A   M \A\APrice : R300";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:99% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A7:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+
+}
+.A7:Hover{
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+/*---*/
+.A8{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A9-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A8::before{
+     content: "Black Louis Vuitton Duffle Bag\A Available sizes:\A  SOLD OUT \A\APrice : R27,500";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A8:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.A9{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A10-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A9::before{
+     content: "Gray Goyard Duffle Bag\A Available sizes:\A  SOLD OUT\A\APrice : R35,000";
+    position: absolute; 
+    bottom: 0;
+    width: 110%;
+    left:95% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A9:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+
+}
+.A9:Hover{
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+/*---*/
+.A10{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A11-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A10::before{
+     content: "Mason Margiella Wallet\A Available sizes:\A  SOLD OUT \A\APrice : R10,500";
+    position: absolute; 
+    bottom: 0;
+    width: 110%;
+    left:99% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+
+.A10:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+
+}
+.A10:Hover{
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+/*--*/
+.A11{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A12-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A11::before{
+     content: "Cartier Santos Octagon\A Available sizes:\A  41mm, 38mm \A\APrice : R138,500";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A11:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.A12{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Accessories/A12-removebg-preview\ \(2\).png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.A12::before{
+     content: "Blue Cartier Rimless Frames\A Available sizes:\A  SOLD OUT \A\APrice : R68,000";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.A12:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .A1::before, .A2::before, .A3::before, .A4::before, .A5::before, .A6::before, .A7::before, .A8::before, .A9::before, .A10::before, .A11::before, .A12::before {
+        font-size: 1rem;
+    }
+    .TopNav {
+        font-size: 1rem;
+        margin-right: 3%;
+    }
+
+}

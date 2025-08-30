@@ -1,0 +1,462 @@
+h2{
+    text-align: center;
+    color:rgb(255, 251, 0)
+}
+.Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+    
+}
+.Header{grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#Arrow{
+    font-size: 0.5rem;
+    margin-left: 2% ;
+}
+.TopNav > ul > li{
+    display: inline-block;
+}
+.DropMenu > a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.TopNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.DropMenu{
+    position: relative;
+}
+.Content{
+    display:none;
+    position: absolute;
+    transform: translateX(-20%);
+    background-color: white;
+    color: black;
+    li{
+        list-style: none;
+        text-align: left;
+    }
+}
+.Content li{
+    position: relative;
+}
+.Content ul{
+    padding: 0;
+    margin: 0;
+}
+.DropMenu:hover .Content{
+    display: block;
+}
+.Content li:hover{
+    background-color: hsla(0, 1%, 52%, 0.8);
+   
+}
+.Content li a{
+    text-decoration: none;
+    color: black;
+}
+.Content li a:hover{
+    color:rgb(255, 251, 0);
+}
+.Logo{
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-image: url(alvalogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+
+.Shirt1{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/asap-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt1::before{
+     content: "White Asap Rocky Shirt\A Available sizes:\A XL L M S\A\APrice : R1,350";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt1:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+.Shirt2{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/Galxboy-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt2::before{
+     content: "Black GalxBoy shirt\A Available sizes:\A XL L M S\A\APrice : R650";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt2:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Shirt3{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/JordanXOffwhite-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt3::before{
+     content: "Jordan X Off-White\A Available sizes:\A XL L M S\A\APrice : R4,400";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt3:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+/*---*/
+.Shirt4{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/LouieShirt-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt4::before{
+     content: "Brown & Green Louis Vuitton\A Available sizes:\A XL L M S\A\APrice : R9,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt4:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+/*---*/
+.Shirt5{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/NikeXOffwhite-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt5::before{
+     content: "Nike X Off-White\A\A Available sizes:\SOLD OUT\A\APrice : R3,700";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt5:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+/*---*/
+.Shirt6{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(shirts/offwhiteflannel-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt6::before{
+     content: "Off-White Flannel\A\A Available sizes:\A M \A\APrice : R6,800";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt6:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+/*---*/
+.Shirt7{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/polo-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt7::before{
+     content: "Teal Polo Golf \A\A Available sizes:\A XL L M S\A\APrice : R1,350";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt7:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+/*---*/
+.Shirt8{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Shirts/rhude-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Shirt8::before{
+     content: "cream rhude shirt \A\A Available sizes:\A L M S\A\APrice : R450";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Shirt8:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* ---*/
+@media screen and (max-width:700px) {
+    .Shirt1::before, .Shirt2::before, .Shirt3::before, .Shirt4::before, .Shirt5::before, .Shirt6::before, .Shirt7::before, .Shirt8::before {
+        font-size: 1rem;
+    }
+    .TopNav{
+        font-size: 1rem;
+        margin-right: 3%;
+    }
+}

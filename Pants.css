@@ -1,0 +1,406 @@
+h2{
+    text-align: center;
+    color:rgb(255, 251, 0)
+}
+.Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+    
+}
+.Header{grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#Arrow{
+    font-size: 0.5rem;
+    margin-left: 2% ;
+}
+.TopNav > ul > li{
+    display: inline-block;
+}
+.DropMenu > a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.TopNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.DropMenu{
+    position: relative;
+}
+.Content{
+    display:none;
+    position: absolute;
+    transform: translateX(-20%);
+    background-color: white;
+    color: black;
+    li{
+        list-style: none;
+        text-align: left;
+    }
+}
+.Content li{
+    position: relative;
+}
+.Content ul{
+    padding: 0;
+    margin: 0;
+}
+.DropMenu:hover .Content{
+    display: block;
+}
+.Content li:hover{
+    background-color: hsla(0, 1%, 52%, 0.8);
+   
+}
+.Content li a{
+    text-decoration: none;
+    color: black;
+}
+.Content li a:hover{
+    color:rgb(255, 251, 0);
+}
+.Logo{
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-image: url(alvalogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+
+/* ---*/
+.Pants1{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants1-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants1::before{
+     content: "Black Face Pants\A Available sizes:\A  L M S\A\APrice : R1,250";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Pants1:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Pants2{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants2-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants2::before{
+     content: "Washed Black Cargo Pants\A Available sizes:\A  L M S\A\APrice : R1,250";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Pants2:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Pants3{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants3-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants3::before{
+     content: "Olive Cargo Pants\A Available sizes:\A  L M S\A\APrice : R1,250";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Pants3:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Pants4{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants4-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants4::before{
+     content: "Blue Flower Pants\A Available sizes:\A  L M S\A\APrice : R2,750";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Pants4:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Pants5{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants5-removebg-preview\ \(1\).png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants5::before{
+     content: "Blue Evisu Pants\A Available sizes:\A  L M S\A\APrice : R4,500";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Pants5:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Pants6{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants6-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants6::before{
+     content: "Black Star Pants\A Available sizes:\A  L M S\A\APrice : R1,250";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Pants6:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+.Pants7{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(Pants/Pants7-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Pants7::before{
+    content: "Leather Cargo Pants\A Available sizes:\A  L M S\A\APrice : R1,700";
+    position: absolute; 
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+}
+.Pants7:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+/*---*/
+@media screen and (max-width: 700px) {
+    .Pants1::before, .Pants2::before, .Pants3::before, .Pants4::before, .Pants5::before, .Pants6::before, .Pants7::before {
+        font-size: 1rem;
+    }
+    .TopNav {
+        font-size: 1rem;
+        margin-right: 3%;
+    }
+}

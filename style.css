@@ -1,0 +1,1109 @@
+.Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "Header Header"
+    "Section1 Section2"
+    "Footer Footer"
+    ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+/* Grid areas */
+.Header{grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+h2{
+    color: hsl(56, 99%, 68%);
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: medium;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.Section1{grid-area: Section1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Text{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    p{
+       font-size: larger; 
+    }
+}
+.Section2{grid-area: Section2;
+}
+.Image{
+    margin: 0 auto;
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin-top: 10%;
+    background-image: url(nikepuffer-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Shop{
+    border-radius: 1.1rem;
+    margin: 0 auto;
+    width: 40%;
+    padding: 0.5rem;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,00.8);
+
+    
+}
+ a{
+    color: inherit;
+    text-decoration: none;
+}
+.Section2 a{
+    color: black;
+}
+.Shop::before{
+    position: absolute;
+    content: "→";
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    opacity: 0;
+    height: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(to right, rgb(255, 251, 0) 40%, rgb(255, 102, 0) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    color:limegreen;
+    transition: all 0.4s ease-in-out;
+
+}
+.Shop:hover::before{
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+#Arrow{
+    font-size: 0.5rem;
+    margin-left: 2% ;
+}
+.TopNav > ul > li{
+    display: inline-block;
+}
+.DropMenu > a{
+    text-decoration: none;
+    color: inherit;
+    z-index: 2;
+
+}
+.TopNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.DropMenu{
+    position: relative;
+}
+.Content{
+    display:none;
+    position: absolute;
+    transform: translateX(-20%);
+    background-color: white;
+    color: black;
+    li{
+        list-style: none;
+        text-align: left;
+    }
+}
+.Content li{
+    position: relative;
+}
+.Content ul{
+    padding: 0;
+    margin: 0;
+}
+.DropMenu:hover .Content{
+    display: block;
+}
+.Content li:hover{
+    background-color: hsla(0, 1%, 52%, 0.8);
+   
+}
+.Content li a{
+    text-decoration: none;
+    color: black;
+}
+.Content li a:hover{
+    color:rgb(255, 251, 0);
+}
+.Logo{
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-image: url(alvalogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Jacket Page CSS*/
+.JacketWrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "Header Header"
+    "Jacket-Section Jacket-Section"
+    "Footer Footer"
+    ;
+
+}
+.Jacket-Section{
+    grid-area: Jacket-Section;
+}
+.Image1{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/nikepuffer-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image1::before{
+     content: "Red Nike Jacket\A\A Available sizes:\A XL L M S\A\APrice : R2,350";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image1:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+.Image2{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/jacket-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image2::before{
+     content: "Red & Black Motorsport Jacket\A\A Available sizes:\A XL L M \A\APrice : R4,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:93% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image2:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+.Image2:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+        border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+.Image3{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/jacket3-removebg-preview.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.Image3::before{
+     content: "Green Kenzo Paris Jacket\A\A Available sizes:\A  L M S\A\APrice : R5,500";
+    position: absolute;
+    bottom: 0;
+    width: 110%;
+    left:99% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+}
+.Image3:hover{
+       border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.Image3:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+.Image4{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Jacket5-removebg-preview\ \(1\).png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image4::before{
+     content: "Golf Le Fluer \A Blue and white\A\A Available sizes:\A  SOLD OUT \A\APrice : R11,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image4:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image5{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/JacketRed-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image5::before{
+     content: "Red Motorsport Jacket \A\A Available sizes:\A XL L M S \A\APrice : R1,700";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image5:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image6{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/hoodie1-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image6::before{
+     content: "Black and White Hoodie\A\A Available sizes:\A XL L M S \A\APrice : R950";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image6:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image7{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/hoodie2-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image7::before{
+     content: "Black & Pink Hoodie \A\A Available sizes:\A XXL XL L M  \A\APrice : R950";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image7:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image8{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/hoodie3-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image8::before{
+     content: "Gray Hoodie\A\A Available sizes\A XL L M S \A\APrice : R1,200";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image8:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image9{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Hoodie4-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image9::before{
+     content: "Gray Louis Vuitton Hoodie \A\A Available sizes\A XL L M S \A\APrice : R12,500";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image9:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image10{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Hoodie5-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image10::before{
+     content: "Black Bapesta Hoodie \A\A Available sizes\A XL L M S \A\APrice : R6,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image10:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image11{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/puffer_jacket-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image11::before{
+     content: "White Moncler Puffer \A\A Available sizes:\A XXL XL L \A\APrice : R14,500";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image11:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image12{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/puffer2-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image12::before{
+     content: "Black Canada Goose Puffer\A\A Available sizes:\A XL L M S \A\APrice : R7,950";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image12:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image13{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/puffer3-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image13::before{
+     content: "Palm Angels X Moncler Puffer \A\A Available sizes:\A SOLD OUT  \A\APrice : R28,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image13:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image14{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Moclerxinter-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image14::before{
+     content: "Moncler X Inter Milan Puffer\A\A Available sizes:\A XL M \A\APrice : R7,500";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image14:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image15{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/puffer5-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image15::before{
+     content: "Black Moncler spider-man Puffer \A\A Available sizes\A  M S \A\APrice : R25,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image15:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image16{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Sweater1-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image16::before{
+     content: "Blue Versace Sweater \A\A Available sizes\A XL L M S \A\APrice : R12,000";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image16:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+}
+.Image17{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Sweater2-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image17::before{
+     content: "Cream Prada Sweater \A\A Available sizes:\A  XL L M s  \A\APrice : R9,500";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:90% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image17:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.Image18{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Sweater3-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image18::before{
+     content: "Gray Gun Sweater\A\A Available sizes\A XL L M S \A\APrice : R700";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:98% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image18:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+}
+.Image18:hover{
+     border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.Image19{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Sweater4-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image19::before{
+     content: "Black & White Sweater \A\A Available sizes\A XL L M S \A\APrice : R700";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:98% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image19:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+}
+.Image19:hover{
+     border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.Image20{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 252, 90);
+    border-radius: 5%;
+    background-image: url(jackets/Sweater5-removebg-preview.png);
+    background-position: center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Image20::before{
+     content: "Black Dog Sweater\A\A Available sizes\A XL L M S \A\APrice : R700";
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left:98% ;
+    transform: scaleX(0);
+    transform-origin: left;
+    height: 94%;
+    background: linear-gradient(to right,rgb(255, 252, 90),rgb(254, 250, 5)) ;
+    border-radius: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    white-space: pre-line;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+   
+
+}
+.Image20:hover::before{
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Image20:hover{
+     border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+@media screen and (max-width:700px) {
+    .Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "Header Header"
+    "Section1 Section1"
+    "Section2 Section2"
+    "Footer Footer"
+    ;
+}
+
+  .Image1::before,.Image2::before,.Image3::before,.Image4::before,.Image5::before,.Image6::before,.Image7::before,.Image8::before,.Image9::before,.Image10::before,.Image11::before,.Image12::before,.Image13::before,.Image14::before,.Image15::before,.Image16::before,.Image17::before,.Image18::before,.Image19::before,.Image20::before {
+        font-size: 1rem;
+    }
+    .TopNav{
+        font-size: 1rem;
+        margin-right: 3%;
+    }
+}

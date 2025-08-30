@@ -1,0 +1,635 @@
+
+h2{
+    text-align: center;
+    color:rgb(255, 251, 0);
+}
+.Wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #b30000 5%, #330000 100%);
+    overflow-y: scroll;
+    
+}
+.Header{grid-area: Header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.Footer{grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#Arrow{
+    font-size: 0.5rem;
+    margin-left: 2% ;
+}
+.TopNav > ul > li{
+    display: inline-block;
+}
+.DropMenu > a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.TopNav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.DropMenu{
+    position: relative;
+}
+.Content{
+    display:none;
+    position: absolute;
+    transform: translateX(-20%);
+    background-color: white;
+    color: black;
+    li{
+        list-style: none;
+        text-align: left;
+    }
+}
+.Content li{
+    position: relative;
+}
+.Content ul{
+    padding: 0;
+    margin: 0;
+}
+.DropMenu:hover .Content{
+    display: block;
+}
+.Content li:hover{
+    background-color: hsla(0, 1%, 52%, 0.8);
+   
+}
+.Content li a{
+    text-decoration: none;
+    color: black;
+}
+.Content li a:hover{
+    color:rgb(255, 251, 0);
+}
+.Logo{
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-image: url(alvalogo-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+.Shoe1{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/Jordan4-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe1::before{
+    position: absolute;
+    content: "Triple White Jordan 4 \A  Availabe Sizes: \A  uk: 8,9,11,12 \A\A Price R4,500";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe1:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe1:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe2{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/orangetimbsprofile-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe2::before{
+    position: absolute;
+    content: "Tangerine Orange Timberlands \A  Availabe Sizes: \A  uk: 7,8,11,12,14 \A\A Price R4,000";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe2:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe2:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe3{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/yeezy-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe3::before{
+    position: absolute;
+    content: "Teal Yeezy  \A  Availabe Sizes: \A  uk: 7,8,9,11,12 \A\A Price R3,000";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe3:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe3:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe4{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/nocta-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe4::before{
+    position: absolute;
+    content: "White Nike X Nocta \A  Availabe Sizes: \A  SOLD OUT \A\A Price R8,500";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe4:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe4:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe5{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/shoerti-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe5::before{
+    position: absolute;
+    content: "Santo Clothing White   \A  Availabe Sizes: \A  uk: 7,8,9,11,12 \A\A Price R1,800";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe5:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe5:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe6{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/SantoSneaker-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe6::before{
+    position: absolute;
+    content: "Brown & Pink Santo Clothing  \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R1,800";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe6:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe6:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe7{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/jordan3-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe7::before{
+    position: absolute;
+    content: "Jordan 3  \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R4,200";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe7:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe7:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe8{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/jordan1low-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe8::before{
+    position: absolute;
+    content: "Jordan 1 low \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R2,700";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe8:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe8:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe9{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/Newbalance-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe9::before{
+    position: absolute;
+    content: "New Balance White & Green \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R4,000";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe9:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe9:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe10{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/Adidas_alides-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe10::before{
+    position: absolute;
+    content: "Adidas Adimule slides \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R900";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe10:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe10:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe11{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/yeezyslides-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe11::before{
+    position: absolute;
+    content: "Yeezy slides \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R2,200";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe11:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe11:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+.Shoe12{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    background-color:rgb(255, 252, 90);
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    background-image: url(shoes/nikeslides-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Shoe12::before{
+    position: absolute;
+    content: "Nike slides  \A  Availabe Sizes: \A  uk: 1,8,9,11,12 \A\A Price R950";
+    width: 150%;
+    transform: scaleX(0);
+    bottom: 0;
+    left: 99%;
+    height: 100%;
+    background-color: rgb(255, 252, 90);
+    border-radius: 5%;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+
+}
+.Shoe12:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.Shoe12:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+}
+@media  screen and (max-width:700px) {
+    .Shoe1::before, .Shoe2::before, .Shoe3::before, .Shoe4::before, .Shoe5::before, .Shoe6::before, .Shoe7::before, .Shoe8::before, .Shoe9::before, .Shoe10::before, .Shoe11::before, .Shoe12::before {
+        font-size: 1rem;
+    }
+    .TopNav{
+        font-size: 1rem;
+        margin-right: 3%;
+    }
+    
+}
